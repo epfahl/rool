@@ -13,7 +13,7 @@ expr = Or(
     And(
         Equal(Literal(1), Variable("a")),
         Equal(Variable("a"), Variable("b"))
-    ),
+    )
 )
 
 store = Store(dict(a = 1, b = 2))
