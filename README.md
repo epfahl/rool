@@ -1,6 +1,6 @@
 ## `rool` is a simple rules language.
 
-`rool` is an embedded domain-specific language that evaluates logical expressions in the context of a key-value data store.
+`rool` is an embedded domain-specific language that evaluates logical expressions in the context of a key-value data store. Evaluation of a logical expression uses a centralized interpreter so that logging and error handling can be controlled in one place.
 
 Example:
 
