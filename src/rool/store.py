@@ -1,14 +1,16 @@
+from dataclasses import dataclass
+
 from typing import Dict, Optional
 
 type Value = str | int | float | bool
 
 
+@dataclass
 class Store:
-    def __init__(self, data: Optional[Dict[str, Value]] = None):
-        if data is None:
-            self.data = {}
-        else:
-            self.data = data
+    data: Dict[str, Value]
+
+    def __init__(self, **data):
+        self.data = data
 
     def get(self, key) -> Value:
         return self.data[key]

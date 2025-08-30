@@ -9,7 +9,7 @@ def test_init_empty():
 
 
 def test_init_populated():
-    store = Store(dict(a=1))
+    store = Store(a=1)
     assert store.size() == 1
     assert store.get("a") == 1
 
@@ -22,7 +22,7 @@ def test_add():
 
 
 def test_remove():
-    store = Store(dict(a=1, b=2))
+    store = Store(a=1, b=2)
     assert store.size() == 2
     store.remove("a")
     assert store.size() == 1

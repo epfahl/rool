@@ -16,7 +16,7 @@ expr = Or(
     )
 )
 
-store = Store(dict(a = 1, b = 2))
+store = Store(a = 1, b = 2)
 
 evaluate(expr, store)
 
